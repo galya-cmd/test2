@@ -4,48 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="assets/imaje/style/normalize.css" rel="stylesheet">
+    <link href="assets/imaje/style/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>WD</title>
 </head>
 <style>
-    .img{
-        position: absolute;
-        width: 480px;
-        height: 800px;
-        left: 960px;
-        top: 4709px;
-        background: #E5E5E5;
-    }
-    h1{
-        font-family:  Larsseit;
-        font-size: 72px;
-        line-height: 76px;
-        letter-spacing: -0.006em;
-    }
-    header{
-        position: absolute;
-        width: 579px;
-        height: 253px;
-        line-height: 53px;
-        letter-spacing: -0.005em;
-    }
-    .body{
-        background-color: aquamarine;
-    }
+    body{
+    margin: 0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: 000000;
+    line-height: 1.6;
+    background-color: gray;    
+}
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+/*intro*/
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+/*header*/
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: gray;
+}
+.header_logo{
+    font-family: 'Revalia';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #34547a;
 
+}
+/*nav*/
+
+.nav{
+    font-size: 16px;
+    font-weight: 700;
+    
+}
 </style>
-
-<body class="body">
-    <h1>Kshitij Choudharyк</h1>
-    <div>
-       
-        <main>
-            <p>MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at ThriveTalk can help you.</p>
-            <img src="assets/imaje/charles-etoroma-390119 (2).png" alt="charlez">
-        </main>
-        <footer>
-            <a class="menu" href="direction.html">Об авторе</a> 
-            <a class="menu" href="contacts.html">Контакты</a>
-        </footer>
+<header class="header">
+    <div class="container_iner">
+        <div class="header_logo">MD</div>
+        <nav class="nav">
+            <a  class="nav_link" href="#">Главное</a>
+            <a class="nav_link" href="#">Об авторе</a>
+            <a class="nav_link" href="#">Работы</a>
+            <a class="nav_link" href="#">Процесс</a>
+            <a class="nav_link" href="#">Контакты</a>
+        </nav>
     </div>
+</header>
+<div class="intro">
+    <div class="container">
+        
+    </div>
+</div>
+<body>
+    
 </body>
 </html>
