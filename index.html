@@ -17,7 +17,8 @@
     font-size: 16px;
     color: 000000;
     line-height: 1.6;
-    background-color: gray;    
+    background-color: grey;
+        
 }
 *,
 *::before
@@ -34,9 +35,19 @@
 .intro{
     width: 100%;
     height: 100vh;
-    
-    
+    background-size: cover;
+    }
+.intro_title{
+    position: absolute;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 79px;
+    text-align: left;
+
+
 }
+
+
 /*header*/
 .header{
     width: 100%;
@@ -44,8 +55,8 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    background-color: gray;
+    z-index: 1000;   
+    padding-top: 30px;
 }
 .header_logo{
     font-family: 'Revalia';
@@ -54,6 +65,11 @@
     font-size: 48px;
     line-height: 60px;
     color: #34547a;
+}
+.header_iner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 /*nav*/
@@ -69,13 +85,14 @@
     vertical-align: top;
     color: #fff;
     text-decoration: none;
+    margin: 10px;
 }
 .nav_link:hover{
     color: #fce38a;
 }
 </style>
 <header class="header">
-    <div class="container_iner">
+    <div class="header_iner">
         <div class="header_logo">MD</div>
         <nav class="nav">
             <a  class="nav_link" href="#">Главное</a>
@@ -88,6 +105,7 @@
 </header>
 <div class="intro">
     <div class="container">
+        <h1 class="intro_title">Дизайн и верстка</h1>
         
     </div>
 </div>
