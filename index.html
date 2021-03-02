@@ -55,7 +55,9 @@
     display: block;
     width: 60px;
     height: 3px;
+    margin: 40px auto;
     background-color: black;
+
 
 
 }
@@ -146,9 +148,36 @@
     padding: 20px;
     border-top: 3px solid #969696;
     opacity: 0.7;
-    
+    }
+    /*section*/
+        .section{
+        padding: 0%;
+        }
+    .section_header{
+        width: 100%;
+        max-width:950px;
+        margin: 0 auto 40px;
+        text-align: center;
+        
+    }
+    .section_suptitel{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .section_title::after{
+        content: "";
+        display: block;
+        width: 70px;
+        height: 5px;
+        margin: 40px auto;
+        background-color:#34547a;
 
 }
+.section_text{
+
+}
+
+
+
 </style>
 <header class="header">
     <div class="header_iner">
@@ -167,7 +196,7 @@
 
         <h1 class="intro_title">Дизайн и верстка</h1>
         <h2 class="intro_subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h2>
- Фото</a>
+        <a class="btn" href="#">Фото</a>
         <div class="slaider">
         <div class="slaider_item">Об авторе</div>
         <div class="slaider_item">Работы</div>
@@ -177,11 +206,25 @@
         
     </div>
 </div>
-<div>
-
-
-
+<section class="section"></section>
+<div class="container">
+    <div class="section_header">
+        <h3 class="section_suptitel">Как я работаю</h3>
+        <h4 class="section_title">Что я могу</h4>
+        <div class="section_text">
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </div>
 </div>
+    <div class="about_items">1</div>
+    <div class="about_items">2</div>
+    <div class="about_items">3</div>
+    
+</div>
+
+
+
+
+
 <body>
     
 </body>
